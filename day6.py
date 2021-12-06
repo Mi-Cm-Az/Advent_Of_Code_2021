@@ -6,7 +6,7 @@ nextday = zero.copy()
 
 day = 0
 
-while day < 256:
+while day < 256: # let´s get some fish
     
         nextday[0] += today[1] 
         nextday[1] += today[2] 
@@ -28,11 +28,11 @@ while day < 256:
         nextday["8neu"] += (today["0neu"] + today[0])
        
         today = nextday.copy()
-        print(today)
         nextday = zero.copy()
         day += 1
+        
 fishes = 0       
 for i in nextday:
     fishes += today.get(i)
     
-print(fishes)
+print(fishes) # fishy fish
